@@ -1,17 +1,23 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { menuConfig } from "../config/menuConfig";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(null);
+  const closeTimeoutRef = useRef(null);
 
   const handleMouseEnter = (menuKey) => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
     setOpenMenu(menuKey);
   };
 
   const handleMouseLeave = () => {
-    setOpenMenu(null);
+    closeTimeoutRef.current = setTimeout(() => {
+      setOpenMenu(null);
+    }, 200);
   };
 
   return (
