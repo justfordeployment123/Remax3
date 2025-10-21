@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Search, Calendar, User, ArrowRight, TrendingUp } from "lucide-react";
+import { Search, Calendar, User, ArrowRight, TrendingUp, BookOpen, Download, Video, FileText, Award, Users } from "lucide-react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
@@ -273,28 +273,357 @@ export default function ArticlesAdvice() {
         </div>
       </section>
 
-      {/* Newsletter Section */}
+      {/* Popular Topics Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Popular Topics</h2>
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="bg-remax-blue/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <BookOpen className="w-6 h-6 text-remax-blue" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Property Guides</h3>
+              <p className="text-gray-600 text-sm mb-3">Comprehensive guides for buying, selling, and renting in Dubai</p>
+              <span className="text-remax-blue text-sm font-semibold">24 Articles →</span>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="bg-remax-blue/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <TrendingUp className="w-6 h-6 text-remax-blue" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Market Analysis</h3>
+              <p className="text-gray-600 text-sm mb-3">Latest trends, forecasts, and data-driven insights</p>
+              <span className="text-remax-blue text-sm font-semibold">18 Articles →</span>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="bg-remax-blue/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <FileText className="w-6 h-6 text-remax-blue" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Legal & Finance</h3>
+              <p className="text-gray-600 text-sm mb-3">Understanding UAE property laws and financing options</p>
+              <span className="text-remax-blue text-sm font-semibold">15 Articles →</span>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="bg-remax-blue/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <Award className="w-6 h-6 text-remax-blue" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Investment Tips</h3>
+              <p className="text-gray-600 text-sm mb-3">Expert strategies for maximizing property returns</p>
+              <span className="text-remax-blue text-sm font-semibold">21 Articles →</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Resources Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Video Resources</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Watch our expert videos covering everything from property tours to market insights
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
+              <div className="relative h-48 bg-gradient-to-br from-remax-blue to-remax-dark-blue flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/20"></div>
+                <Video className="w-16 h-16 text-white relative z-10" />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white px-2 py-1 rounded text-xs font-semibold">
+                  12:45
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Dubai Property Market Update Q1 2025
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Our CEO discusses the latest market trends and what to expect in 2025
+                </p>
+                <div className="flex items-center gap-2 text-sm text-gray-500">
+                  <Users className="w-4 h-4" />
+                  <span>12.5K views</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
+              <div className="relative h-48 bg-gradient-to-br from-remax-blue to-remax-dark-blue flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/20"></div>
+                <Video className="w-16 h-16 text-white relative z-10" />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white px-2 py-1 rounded text-xs font-semibold">
+                  8:30
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Virtual Tour: Luxury Villa in Emirates Hills
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Take a virtual walkthrough of this stunning 6-bedroom villa
+                </p>
+                <div className="flex items-center gap-2 text-sm text-gray-500">
+                  <Users className="w-4 h-4" />
+                  <span>8.2K views</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
+              <div className="relative h-48 bg-gradient-to-br from-remax-blue to-remax-dark-blue flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/20"></div>
+                <Video className="w-16 h-16 text-white relative z-10" />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white px-2 py-1 rounded text-xs font-semibold">
+                  15:20
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  How to Get a Mortgage in Dubai
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Complete guide to financing your property purchase in the UAE
+                </p>
+                <div className="flex items-center gap-2 text-sm text-gray-500">
+                  <Users className="w-4 h-4" />
+                  <span>15.8K views</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <button className="bg-remax-blue text-white px-8 py-3 rounded font-semibold hover:bg-remax-dark-blue transition-colors">
+              View All Videos
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Downloadable Resources Section */}
       <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Downloadable Resources</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Free guides, checklists, and reports to help you navigate the Dubai property market
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-remax-red/10 p-3 rounded-lg">
+                  <Download className="w-6 h-6 text-remax-red" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Dubai Property Buyer's Guide
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Complete guide covering all aspects of buying property in Dubai
+                  </p>
+                  <button className="text-remax-blue font-semibold text-sm hover:text-remax-dark-blue transition-colors flex items-center gap-2">
+                    Download PDF
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-remax-red/10 p-3 rounded-lg">
+                  <Download className="w-6 h-6 text-remax-red" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Seller's Preparation Checklist
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Step-by-step checklist to prepare your property for sale
+                  </p>
+                  <button className="text-remax-blue font-semibold text-sm hover:text-remax-dark-blue transition-colors flex items-center gap-2">
+                    Download PDF
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-remax-red/10 p-3 rounded-lg">
+                  <Download className="w-6 h-6 text-remax-red" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Landlord's Leasing Guide
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Everything landlords need to know about renting in Dubai
+                  </p>
+                  <button className="text-remax-blue font-semibold text-sm hover:text-remax-dark-blue transition-colors flex items-center gap-2">
+                    Download PDF
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-remax-red/10 p-3 rounded-lg">
+                  <Download className="w-6 h-6 text-remax-red" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Q1 2025 Market Report
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Comprehensive analysis of Dubai's real estate market trends
+                  </p>
+                  <button className="text-remax-blue font-semibold text-sm hover:text-remax-dark-blue transition-colors flex items-center gap-2">
+                    Download PDF
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-remax-red/10 p-3 rounded-lg">
+                  <Download className="w-6 h-6 text-remax-red" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Investment ROI Calculator
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Excel template to calculate property investment returns
+                  </p>
+                  <button className="text-remax-blue font-semibold text-sm hover:text-remax-dark-blue transition-colors flex items-center gap-2">
+                    Download XLSX
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-remax-red/10 p-3 rounded-lg">
+                  <Download className="w-6 h-6 text-remax-red" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    First-Time Buyer Checklist
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Essential checklist for first-time property buyers in UAE
+                  </p>
+                  <button className="text-remax-blue font-semibold text-sm hover:text-remax-dark-blue transition-colors flex items-center gap-2">
+                    Download PDF
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Expert Contributors Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Expert Contributors</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Meet the real estate professionals and market analysts behind our content
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-remax-blue to-remax-dark-blue rounded-full mx-auto mb-4 flex items-center justify-center">
+                <User className="w-16 h-16 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Sarah Ahmed</h3>
+              <p className="text-sm text-gray-600 mb-2">Senior Market Analyst</p>
+              <p className="text-xs text-gray-500">24 Articles</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-remax-blue to-remax-dark-blue rounded-full mx-auto mb-4 flex items-center justify-center">
+                <User className="w-16 h-16 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Mohammed Al-Rashid</h3>
+              <p className="text-sm text-gray-600 mb-2">Property Investment Expert</p>
+              <p className="text-xs text-gray-500">18 Articles</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-remax-blue to-remax-dark-blue rounded-full mx-auto mb-4 flex items-center justify-center">
+                <User className="w-16 h-16 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Lisa Thompson</h3>
+              <p className="text-sm text-gray-600 mb-2">Residential Specialist</p>
+              <p className="text-xs text-gray-500">21 Articles</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-remax-blue to-remax-dark-blue rounded-full mx-auto mb-4 flex items-center justify-center">
+                <User className="w-16 h-16 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Ahmed Hassan</h3>
+              <p className="text-sm text-gray-600 mb-2">Legal & Finance Advisor</p>
+              <p className="text-xs text-gray-500">15 Articles</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="py-16 bg-gradient-to-br from-remax-blue to-remax-dark-blue text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold mb-4">
             Stay Updated with Dubai Real Estate Insights
           </h2>
-          <p className="text-gray-600 mb-8">
-            Subscribe to our newsletter and get the latest articles, market reports, and expert advice delivered to your inbox.
+          <p className="text-blue-100 mb-8 text-lg">
+            Subscribe to our newsletter and get the latest articles, market reports, and expert advice delivered to your inbox every week.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 px-4 py-3 border-2 border-gray-300 rounded focus:outline-none focus:border-remax-blue"
+              className="flex-1 px-4 py-3 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
             />
-            <button className="bg-remax-blue text-white px-8 py-3 rounded font-semibold hover:bg-remax-dark-blue transition-colors">
-              Subscribe
+            <button className="bg-remax-red text-white px-8 py-3 rounded font-semibold hover:bg-red-700 transition-colors">
+              Subscribe Now
             </button>
           </div>
-          <p className="text-xs text-gray-500 mt-4">
-            By subscribing, you agree to our Privacy Policy and consent to receive updates from RE/MAX Hub.
+          <p className="text-xs text-blue-200 mt-4">
+            By subscribing, you agree to our Privacy Policy and consent to receive updates from RE/MAX Hub. Unsubscribe anytime.
           </p>
+          
+          <div className="grid md:grid-cols-3 gap-6 mt-12 text-left">
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+              <div className="text-3xl font-bold mb-2">500+</div>
+              <div className="text-blue-100">Articles Published</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+              <div className="text-3xl font-bold mb-2">50K+</div>
+              <div className="text-blue-100">Monthly Readers</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+              <div className="text-3xl font-bold mb-2">15+</div>
+              <div className="text-blue-100">Expert Contributors</div>
+            </div>
+          </div>
         </div>
       </section>
 
