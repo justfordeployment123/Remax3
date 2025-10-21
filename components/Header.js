@@ -241,6 +241,14 @@ export default function Header() {
                     </li>
                     <li>
                       <Link
+                        href="/articles-advice"
+                        className="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-remax-blue transition-colors"
+                      >
+                        Articles and Advice
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         href="/about-us"
                         className="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-remax-blue transition-colors"
                       >
