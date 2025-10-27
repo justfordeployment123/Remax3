@@ -32,9 +32,9 @@ export default function Header() {
               title="RE/MAX Home"
             >
               <img 
-                src="https://www.remax.com/images/design-system/logo/remax/logotype_color.svg"
-                alt="RE/MAX"
-                className="h-8 w-auto"
+                src="/assets/Remax_hub_logo.jpeg"
+                alt="RE/MAX Hub"
+                className="h-12 w-auto"
               />
             </Link>
           </div>

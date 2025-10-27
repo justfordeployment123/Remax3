@@ -30,8 +30,8 @@ export default function RentalGuide() {
     try {
       // Create a link to download the PDF file
       const link = document.createElement('a');
-      link.href = '/assets/Dubai Landlord leasing.pdf';
-      link.download = 'Dubai Landlord & Leasing Guide.pdf';
+      link.href = '/assets/REMAX_Landlord_Leasing_Guide.pdf';
+      link.download = 'REMAX_Landlord_Leasing_Guide.pdf';
       link.target = '_blank';
       document.body.appendChild(link);
       link.click();

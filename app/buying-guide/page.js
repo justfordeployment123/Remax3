@@ -58,8 +58,8 @@ export default function BuyingGuide() {
     try {
       // Create a link to download the PDF file
       const link = document.createElement('a');
-      link.href = '/assets/Dubai Property Buying Guide.pdf';
-      link.download = 'Dubai Property Buying Guide.pdf';
+      link.href = '/assets/REMAX_Property_Buying_Guide.pdf';
+      link.download = 'REMAX_Property_Buying_Guide.pdf';
       link.target = '_blank';
       document.body.appendChild(link);
       link.click();
